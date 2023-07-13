@@ -1,3 +1,115 @@
+/*Declarar variables*/
+:root {
+  /*Paleta de Colores*/
+  --color-principal: #22151F;
+  --color-negro: #000;
+  --color-blanco: #EFE3C8;
+  --text-color: #323031;
+  --marathon: #024983;
+
+
+  /*Tipos de letras*/
+  --fuente-principal: 'Raleway', 'sans-serif';
+}
+
+/* Selector Universal de toda la pagina */
+* {
+  /* Quitar el margen y espaciado predeterminado */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --------------------------------
+Selector de estilo de tipo HTML 
+----------------------------------*/
+
+html {
+  /* Suaviza el desplazamiento del SCROLL en la pagina */
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  /*Quitar el espacio que aparece en parte inferior de la imagen*/
+}
+
+video {
+  display: block;
+  /*Quitar el espacio que aparece en parte inferior del video*/
+}
+
+iframe {
+  display: block;
+}
+
 * {
   font-weight: bold
+}
+
+.contenedor {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*--------------------
+CABECERA
+---------------------*/
+
+.header {
+  background-color: var(--color-principal);
+  height: 60px;
+  color: var(--color-blanco);
+  box-shadow: 0px 4px 9px -1px rgba(0, 0, 0, 0.1);
+  /* Traer la cabecera encima de los demas elementos */
+  z-index: 1000;
+}
+
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: var(--color-blanco);
+  text-decoration: none;
+}
+
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+/* .nav-menu-link:hover,
+.nav-menu-link_active {
+  transition: 0.5s;
+} */
+
+/* TOGGLE */
+.nav-toggle {
+  color: rgb(255, 255, 255);
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;
 }
