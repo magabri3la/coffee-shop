@@ -41,11 +41,11 @@
                         <img src="img/cafe-americano.avif" alt="">
                     </div>
                     <div class="card-info">
-                        <p class="text-title">Cafe americano </p>
+                        <p class="text-title" name="name">Cafe americano </p>
                         <p class="text-body">Product description and details</p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title">$5</span>
+                        <span class="text-title" name="price">$5</span>
                         <div class="card-button">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path
@@ -67,11 +67,11 @@
                         <img src="img/cafeConLeche.webp" alt="">
                     </div>
                     <div class="card-info">
-                        <p class="text-title">Café con leche </p>
+                        <p class="text-title" name="name">Café con leche </p>
                         <p class="text-body">Product description and details</p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title">$7</span>
+                        <span class="text-title" name="price">$7</span>
                         <div class="card-button">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path
@@ -93,11 +93,11 @@
                         <img src="img/sandwich-havar-adob-t.jpg.webp" alt="">
                     </div>
                     <div class="card-info">
-                        <p class="text-title">Sandwich de jamón y queso </p>
+                        <p class="text-title" name="name">Sandwich de jamón y queso </p>
                         <p class="text-body">Product description and details</p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title">$10</span>
+                        <span class="text-title" name="price">$10</span>
                         <div class="card-button">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path
@@ -119,11 +119,11 @@
                         <img src="img/hamburguesa-sencilla.jpg" alt="">
                     </div>
                     <div class="card-info">
-                        <p class="text-title">Hamburguesa sencilla </p>
+                        <p class="text-title" name="name">Hamburguesa sencilla </p>
                         <p class="text-body">Product description and details</p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title">$10</span>
+                        <span class="text-title" name="price">$10</span>
                         <div class="card-button">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path
@@ -145,11 +145,11 @@
                         <img src="img/burguerDoble.jpg" alt="">
                     </div>
                     <div class="card-info">
-                        <p class="text-title">Hamburguesa doble </p>
+                        <p class="text-title" name="name">Hamburguesa doble </p>
                         <p class="text-body">Product description and details</p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title">$15</span>
+                        <span class="text-title" name="price">$15</span>
                         <div class="card-button">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path
@@ -171,11 +171,11 @@
                         <img src="img/papas.jpg" alt="">
                     </div>
                     <div class="card-info">
-                        <p class="text-title">Papas fritas </p>
+                        <p class="text-title" name="name">Papas fritas </p>
                         <p class="text-body">Product description and details</p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title">$5</span>
+                        <span class="text-title" name="price">$5</span>
                         <div class="card-button">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path
@@ -197,11 +197,11 @@
                         <img src="img/arosDeCebolla.jpg" alt="">
                     </div>
                     <div class="card-info">
-                        <p class="text-title">Aros de cebolla</p>
+                        <p class="text-title" name="name">Aros de cebolla</p>
                         <p class="text-body">Product description and details</p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title">$5</span>
+                        <span class="text-title" name="price">$5</span>
                         <div class="card-button">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path
@@ -223,11 +223,11 @@
                         <img src="img/fiji.jpg" alt="">
                     </div>
                     <div class="card-info">
-                        <p class="text-title">Agua Fiji </p>
+                        <p class="text-title" name="name">Agua Fiji </p>
                         <p class="text-body">Product description and details</p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title">$5</span>
+                        <span class="text-title" name="price">$5</span>
                         <div class="card-button">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path
@@ -249,11 +249,11 @@
                         <img src="img/maltin.png" alt="">
                     </div>
                     <div class="card-info">
-                        <p class="text-title">Maltin Polar </p>
+                        <p class="text-title" name="name">Maltin Polar </p>
                         <p class="text-body">Product description and details</p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title">$5</span>
+                        <span class="text-title" name="price">$5</span>
                         <div class="card-button">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path
@@ -275,11 +275,11 @@
                         <img src="img/cafeConLeche.webp" alt="">
                     </div>
                     <div class="card-info">
-                        <p class="text-title">Café con leche </p>
+                        <p class="text-title" name="name">Café con leche </p>
                         <p class="text-body">Product description and details</p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title">$7</span>
+                        <span class="text-title"  name="price">$7</span>
                         <div class="card-button">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path
