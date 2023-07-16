@@ -10,7 +10,7 @@
 <body>
     <br>
     <div class="container">
-        <h1 class="text-center" style="background-color: #035D8A; color: white; border-radius: 5px;">LISTADO DE PRODUCTOS</h1>
+        <h1 class="text-center" style="background-color: #201520; color: white; border-radius: 5px;">LISTADO DE ORDENES</h1>
     </div>
 
     <br>
@@ -20,11 +20,9 @@
             <thead class="table-dark">
                 <tr>
                     <th scope="col">IdOrder</th>
-                    <th scope="col">TotalPrice</th>
-                    <th scope="col">OrderDetails</th>
-                    <th scope="col">Precio</th>
                     <th scope="col">Name</th>
-                    <th scope="col">Category</th>
+                    <th scope="col">TotalPrice</th>
+                    <th scope="col">Precio</th>
                     <th scope="col">Editar</th>
                     <th scope="col">Eliminar</th>
                 </tr>
