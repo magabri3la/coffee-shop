@@ -1,3 +1,312 @@
+/*Declarar variables*/
+:root {
+  /*Paleta de Colores*/
+  --color-fondo: #201520;
+  --color-header: rgba(112, 67, 65, 0.30);
+  --color-negro: #000;
+  --color-blanco: #EFE3C8;
+  --text-color: #323031;
+  --marathon: #024983;
+
+
+  /*Tipos de letras*/
+  --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Selector Universal de toda la pagina */
+* {
+  /* Quitar el margen y espaciado predeterminado */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--color-fondo);
+}
+
+/* --------------------------------
+Selector de estilo de tipo HTML 
+----------------------------------*/
+
+html {
+  /* Suaviza el desplazamiento del SCROLL en la pagina */
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  /*Quitar el espacio que aparece en parte inferior de la imagen*/
+}
+
+video {
+  display: block;
+  /*Quitar el espacio que aparece en parte inferior del video*/
+}
+
+iframe {
+  display: block;
+}
+
 * {
   font-weight: bold
 }
+
+.contenedor {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*--------------------
+CABECERA
+---------------------*/
+
+.header {
+  background-color: var(--color-header);
+  height: 60px;
+  color: var(--color-blanco);
+  box-shadow: 0px 4px 9px -1px rgba(0, 0, 0, 0.1);
+  /* Traer la cabecera encima de los demas elementos */
+  z-index: 1000;
+  font-family: var(--fuente-principal);
+}
+
+
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: var(--color-blanco);
+  text-decoration: none;
+}
+
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+/* .nav-menu-link:hover,
+.nav-menu-link_active {
+  transition: 0.5s;
+} */
+
+/* TOGGLE */
+.nav-toggle {
+  color: rgb(255, 255, 255);
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;
+}
+
+/*NOTICIAS */
+
+.rowProducts {
+  display: flex;
+  /* Flexbox*/
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Los elementos hijos se ponen en fila*/
+  justify-content: center;
+}
+
+
+
+
+
+/* button */
+
+.buttonDiv {
+  margin-top: 20px;
+}
+.button2 {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 25px;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+}
+
+.button2:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+    inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: var(--color-header);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: #ffffff;
+  border: 1px solid var(--color-header);
+}
+
+.button2:hover:before {
+  top: -35%;
+  background-color: var(--color-header);
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: var(--color-header);
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+/* CARD */
+
+#title-carta {
+  color: var(--color-blanco);
+  margin: 40px 0;
+  font-family: var(--fuente-principal);
+  text-align: center;
+  font-size: 56px;
+}
+
+.card {
+  flex-basis: 20%; /* Ocupa el 20% del ancho de la fila */
+  max-width: 20%; /* Establece un máximo del 20% del ancho de la fila */
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .11);
+  cursor: pointer;
+  width: 250px;
+  height: 320px;
+  margin: 20px;
+  text-align: center;
+  padding: .8em;
+  position: relative;
+  overflow: visible;
+  color: var(--color-blanco);
+  font-family: var(--fuente-principal);
+ }
+
+ @media screen and (max-width: 1920px) {
+  .card {
+    flex-basis: 15%; /* Cuando el ancho de la pantalla es menor a 768px, cada tarjeta ocupa el 50% del ancho de la fila */
+    max-width: 15%; /* Establece un máximo del 50% del ancho de la fila */
+  }
+}
+ 
+ .card-img{
+  height: 40%;
+  width: 100%;
+  border-radius: .5rem;
+  transition: .3s ease;
+ }
+
+  
+ .card-img img{
+  height: 150%;
+  width: 100%;
+  border-radius: .5rem;
+  transition: .3s ease;
+ }
+ 
+ .card-info {
+  padding-top: 30%;
+ }
+ 
+ svg {
+  width: 22px;
+  height: 22px;
+  filter: url(&#39;#color-filter&#39;);
+  filter: invert(100%) url(#color-filter);
+ }
+ 
+ .card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+ }
+ 
+ /*Text*/
+ .text-title {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.5;
+ }
+ 
+ .text-body {
+  font-size: .9em;
+  padding-bottom: 10px;
+ }
+ 
+ /*Button*/
+ .card-button {
+  border: 1px solid #ddd;
+  display: flex;
+  padding: .3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: .3s ease-in-out;
+ }
+ 
+ /*Hover*/
+ .card-img:hover {
+  transform: translateY(-25%);
+  box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+ }
+ 
+ .card-button:hover {
+  border: 1px solid #ffcaa6;
+  background-color: #ffcaa6;
+ }
+ 
