@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <title>Conocenos</title>
+</head>
+<body>
+
+  <header class="header" class="espaciado">
+    <div class="contenedor">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+
+            </a>
+            <div class="bars_menu" aria-label="Abrir menú">
+                <span class="line1_bars-menu"></span>
+                <span class="line2_bars-menu"></span>
+                <span class="line3_bars-menu"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="index.html" class="nav-menu-link nav-link">inicio</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="index.html" class="nav-menu-link nav-link">Pedidos</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <h1>Trivia de Cafetería</h1>
+
+  <div>
+    <button id="start-button" onclick="startTrivia()">Comenzar Trivia</button>
+    <div id="question-container" style="display: none;">
+      <p id="question"></p>
+      <ul id="options">
+        <!-- Las opciones de respuesta se cargarán aquí dinámicamente -->
+      </ul>
+    </div>
+    <button id="next-button" onclick="nextQuestion()" style="display: none;">Siguiente Pregunta</button>
+    <p id="timer" style="display: none;">Tiempo restante: 10</p>
+  
+    <h1 id="congratulations-message" style="display: none;">Felicitaciones, tu código de descuento es: ASS100%</h1>
+    <h1 id="retry-message" style="display: none;">Vuelve a intentarlo mañana para ganar el código de descuento.</h1>
+  </div>
+
+  <script src="trivia.js"></script>
+</body>
+</html>
