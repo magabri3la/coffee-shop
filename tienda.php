@@ -20,19 +20,19 @@ $productos = obtenerProductos();
                         <div class="card-footer">
                             <span class="text-title" name="price">$<?php echo number_format($producto->precio, 2) ?></span>
                             <?php if (productoYaEstaEnCarrito($producto->id)) { ?>
-                                <form action="eliminar_del_carrito.php" method="post">
+                                <form action="eliminar_del_carrito.php" method="post" style="margin-top: 12px; display: flex; align-items: center; justify-content: space-around; width: 100%;">
                                     <input type="hidden" name="id_producto" value="<?php echo $producto->id ?>">
-                                    <span class="button is-success">
+                                    <span class="">
                                         <i class="fa fa-check"></i>&nbsp;En el carrito
                                     </span>
-                                    <button class="button is-danger">
+                                    <button class="button">
                                         <i class="fa fa-trash-o"></i>&nbsp;Quitar
                                     </button>
                                 </form>
                             <?php } else { ?>
-                                <form action="agregar_al_carrito.php" method="post">
+                                <form action="agregar_al_carrito.php" method="post" style="margin-top: 12px; display: flex; align-items: center; justify-content: space-around; width: 100%;">
                                     <input type="hidden" name="id_producto" value="<?php echo $producto->id ?>">
-                                    <button class="button is-primary">
+                                    <button class="button">
                                         <i class="fa fa-cart-plus"></i>&nbsp;Agregar al carrito
                                     </button>
                                 </form>
