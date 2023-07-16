@@ -1,3 +1,4 @@
+<?php require_once "config/conexion.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedidos</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/stylesCart.css">
 </head>
 
 <body>
+    <a href="shoppingCart.php" class="btn-flotante" id="btnCarrito">Carrito <span class="badge bg-success" id="carrito">0</span></a>
     <header class="header" class="espaciado">
         <div class="contenedor">
             <nav class="nav">
@@ -22,10 +25,10 @@
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-menu-item">
-                        <a href="index.html" class="nav-menu-link nav-link">inicio</a>
+                        <a href="index.php" class="nav-menu-link nav-link">inicio</a>
                     </li>
                     <li class="nav-menu-item">
-                        <a href="index.html" class="nav-menu-link nav-link">Pedidos</a>
+                        <a href="pedidos.php" class="nav-menu-link nav-link">Pedidos</a>
                     </li>
                 </ul>
             </nav>
@@ -36,16 +39,22 @@
         <div class="contenedor">
             <h2 id="title-carta">CARTA</h2>
             <div class="rowProducts">
-                <div class="card">
+            <?php require("config/conexion.php");
+    
+                $sql = $conexion->query("SELECT * FROM products");
+    
+                while($resultado = $sql->fetch_assoc()) {
+                ?>
+                <div class="card" id="<?php echo $resultado["IdProducts"] ?>">
                     <div class="card-img">
-                        <img src="img/cafe-americano.avif" alt="">
+                        <img src="img/<?php echo $resultado["Image"] ?>" alt="">
                     </div>
                     <div class="card-info">
-                        <p class="text-title" name="name">Cafe americano </p>
-                        <p class="text-body">Product description and details</p>
+                        <p class="text-title"><?php echo $resultado["ProductName"] ?></p>
+                        <p class="text-body"><?php echo $resultado["Description"] ?></p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title" name="price">$5</span>
+                        <span class="text-title" name="price"><?php echo $resultado["Price"] ?></span>
                         <div class="card-button">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path
@@ -62,7 +71,10 @@
                     </div>
                 </div>
 
-                <div class="card">
+            <?php } ?>
+
+                
+                <!-- <div class="card">
                     <div class="card-img">
                         <img src="img/cafeConLeche.webp" alt="">
                     </div>
@@ -279,7 +291,7 @@
                         <p class="text-body">Product description and details</p>
                     </div>
                     <div class="card-footer">
-                        <span class="text-title"  name="price">$7</span>
+                        <span class="text-title" name="price">$7</span>
                         <div class="card-button">
                             <svg class="svg-icon" viewBox="0 0 20 20">
                                 <path
@@ -295,10 +307,11 @@
                         </div>
                     </div>
                 </div>
+                 -->
             </div>
         </div>
     </section>
 
 </body>
-
+<script src="assets/js/scripts.js"></script>
 </html>
