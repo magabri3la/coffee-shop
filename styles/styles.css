@@ -140,6 +140,7 @@ CABECERA
 .buttonDiv {
   margin-top: 20px;
 }
+
 .button2 {
   display: inline-block;
   transition: all 0.2s ease-in;
@@ -219,8 +220,10 @@ CABECERA
 }
 
 .card {
-  flex-basis: 20%; /* Ocupa el 20% del ancho de la fila */
-  max-width: 20%; /* Establece un máximo del 20% del ancho de la fila */
+  flex-basis: 20%;
+  /* Ocupa el 20% del ancho de la fila */
+  max-width: 20%;
+  /* Establece un máximo del 20% del ancho de la fila */
   background: rgba(255, 255, 255, 0.10);
   box-shadow: 0 5px 10px rgba(0, 0, 0, .11);
   cursor: pointer;
@@ -232,42 +235,44 @@ CABECERA
   overflow: visible;
   color: var(--color-blanco);
   font-family: var(--fuente-principal);
- }
+}
 
- @media screen and (max-width: 1920px) {
+@media screen and (max-width: 1920px) {
   .card {
-    flex-basis: 15%; /* Cuando el ancho de la pantalla es menor a 768px, cada tarjeta ocupa el 50% del ancho de la fila */
-    max-width: 15%; /* Establece un máximo del 50% del ancho de la fila */
+    flex-basis: 15%;
+    /* Cuando el ancho de la pantalla es menor a 768px, cada tarjeta ocupa el 50% del ancho de la fila */
+    max-width: 15%;
+    /* Establece un máximo del 50% del ancho de la fila */
   }
 }
- 
- .card-img{
+
+.card-img {
   height: 192px;
   width: 100%;
   border-radius: .5rem;
   transition: .3s ease;
- }
+}
 
-  
- .card-img img{
+
+.card-img img {
   height: 100%;
   width: 100%;
   border-radius: .5rem;
   transition: .3s ease;
- }
- 
- .card-info {
+}
+
+.card-info {
   padding-top: 24px;
- }
- 
- svg {
+}
+
+svg {
   width: 22px;
   height: 22px;
   filter: url(&#39;#color-filter&#39;);
   filter: invert(100%) url(#color-filter);
- }
- 
- .card-footer {
+}
+
+.card-footer {
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -275,45 +280,214 @@ CABECERA
   align-items: center;
   padding-top: 10px;
   border-top: 1px solid #ddd;
- }
- 
- /*Text*/
- .text-title {
+}
+
+/*Text*/
+.text-title {
   font-weight: 900;
   font-size: 16px;
   line-height: 1.5;
- }
- 
- .text-body {
+}
+
+.text-body {
   font-size: .9em;
   padding-bottom: 10px;
- }
- 
- /*Button*/
- .card-button {
+}
+
+/*Button*/
+.card-button {
   border: 1px solid #ddd;
   display: flex;
   padding: .3em;
   cursor: pointer;
   border-radius: 50px;
   transition: .3s ease-in-out;
- }
- 
- /*Hover*/
- .card-img:hover {
+}
+
+/*Hover*/
+.card-img:hover {
   transform: translateY(-25%);
   box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
- }
- 
- .card-button:hover {
+}
+
+.card-button:hover {
   border: 1px solid #ffcaa6;
   background-color: #ffcaa6;
- }
+}
 
- .button {
+.button {
   border: none;
   background-color: #998B84;
   padding: 8px 12px;
   cursor: pointer;
- }
- 
+}
+
+
+/* Estilos para la columna del carrito de compras */
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* Alineación del texto en el centro */
+  height: 100vh;
+  /* Establece la altura de la columna para ocupar todo el viewport */
+}
+
+.btn {
+  background-color: transparent;
+  position: relative;
+  border: none;
+  
+}
+
+.btn::after {
+  position: absolute;
+  top: -130%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(168, 7, 7);
+  padding: 4px 8px;
+  border-radius: 5px;
+  transition: .2s linear;
+  transition-delay: .2s;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon {
+  transform: scale(1.2);
+  transition: .2s linear;
+}
+
+.btn:hover>.icon {
+  transform: scale(1.5);
+}
+
+.btn:hover>.icon path {
+  fill: rgb(168, 7, 7);
+}
+
+.btn:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: -160%;
+}
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+  font-family: var(--fuente-principal);
+
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  border-bottom: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  /* Borde vertical */
+  text-align: left;
+}
+
+.table th {
+  font-weight: bold;
+  border-color: #fff;
+  /* Color de borde blanco */
+  background-color: var(--color-header);
+  /* Color de fondo para el encabezado */
+  color: white;
+  /* Color de texto para el encabezado */
+  text-transform: uppercase;
+}
+
+.tituloCart {
+  color: white;
+  margin: 30px 0px;
+  text-transform: uppercase;
+  font-family: var(--fuente-principal);
+  text-align: center;
+}
+
+.table td {
+  vertical-align: middle;
+  /* Centra verticalmente el contenido de las celdas */
+}
+
+.table tfoot td {
+  font-weight: bold;
+  text-align: right;
+}
+
+.table-btn {
+  text-align: center;
+  /* Centra el botón */
+}
+
+/* BOTON DE TERMINAR COMPRA */
+
+.button {
+  --color: #00A97F;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: .3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+  margin-top: 30px;
+  font-family: var(--fuente-principal);
+}
+
+.button::before,
+.button::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+}
+
+.button::before {
+  top: -1em;
+  left: -1em;
+}
+
+.button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.button:hover {
+  color: rgb(10, 25, 30);
+}
+
+.button:active {
+  filter: brightness(.8);
+}
