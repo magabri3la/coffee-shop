@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/stylesContacto.css">
     <link rel="stylesheet" href="styles/styleshome.css">
     
-    <title>Contacto</title>
+    <title>Jitsi Coffee - Contacto</title>
     <!--FONTAWESOME CODE-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
     <!--ANIMATE CSS-->

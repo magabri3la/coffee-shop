@@ -133,6 +133,9 @@ body {
 
 /*ABOUT */
 
+.white {
+    color: #FFFFFF !important;
+}
 
 .about {
     text-align: center;

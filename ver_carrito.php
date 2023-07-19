@@ -10,7 +10,7 @@ if (count($productos) <= 0) {
                 <h1 class="title">
                     Todavía no hay productos
                 </h1>
-                <h2 class="subtitle">
+                <h2 class="subtitle white">
                     Visita la tienda para agregar productos a tu carrito
                 </h2>
                 <a href="tienda.php" class="button is-warning">Ver tienda</a>
@@ -73,10 +73,7 @@ if (count($productos) <= 0) {
                     </tr>
                 </tfoot>
             </table>
-            <button class="button">
-                Terminar compra
-                <a href="terminar_compra.php"></a>
-            </button>
+            <a class="button" href="terminar_compra.php">Terminar compra</a>
         </div>
     </div>
 <?php } ?>

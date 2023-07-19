@@ -329,12 +329,13 @@ span{
 /*Questions*/
 .questions{
     text-align: center; 
+    padding-top: 90px;
 }
 .questions__container{
     display: grid;
     gap: 2em;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 50px;
    
 }
 .questions__padding{
