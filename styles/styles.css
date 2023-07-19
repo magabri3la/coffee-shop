@@ -225,7 +225,6 @@ CABECERA
   box-shadow: 0 5px 10px rgba(0, 0, 0, .11);
   cursor: pointer;
   width: 250px;
-  height: 320px;
   margin: 20px;
   text-align: center;
   padding: .8em;
@@ -243,7 +242,7 @@ CABECERA
 }
  
  .card-img{
-  height: 40%;
+  height: 192px;
   width: 100%;
   border-radius: .5rem;
   transition: .3s ease;
@@ -251,14 +250,14 @@ CABECERA
 
   
  .card-img img{
-  height: 150%;
+  height: 100%;
   width: 100%;
   border-radius: .5rem;
   transition: .3s ease;
  }
  
  .card-info {
-  padding-top: 30%;
+  padding-top: 24px;
  }
  
  svg {
@@ -271,6 +270,7 @@ CABECERA
  .card-footer {
   width: 100%;
   display: flex;
+  flex-flow: column;
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
@@ -308,5 +308,12 @@ CABECERA
  .card-button:hover {
   border: 1px solid #ffcaa6;
   background-color: #ffcaa6;
+ }
+
+ .button {
+  border: none;
+  background-color: #998B84;
+  padding: 8px 12px;
+  cursor: pointer;
  }
  
