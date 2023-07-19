@@ -53,9 +53,9 @@
         </nav>
         <section class="hero__container container">
             <h1 class="hero__title">La mejor cafetería de la Ciudad</h1>
-            <p class="pero__paragraph">Adéntrate a ésta gran aventura donde podrás saborear nuestros deliciosos potajes
+            <p class="pero__paragraph">Adéntrate a ésta gran aventura donde podrás saborear nuestros deliciosos potajes,
                 <br>
-                , atención de primera y una excelente banda sonora</p>
+                atención de primera y una excelente banda sonora</p>
             <a href="contacto.php" class="cta">Reserva</a>
         </section>
     </header>
@@ -77,7 +77,7 @@
                             <b>Hamburguesa de pollo:</b> En lugar de carne de res, se utiliza carne de pollo, que puede
                             ser empanizada o a la parrilla.</p>
 
-                        <a href="#" class="cta btn1">Ver Catálogo</a>
+                        <a href="tienda.php" class="cta btn1">Ver Tienda</a>
                     </div>
                     <figure class="testimony__picture">
                         <img src="./img/burguer2.jpg" alt="" class="testimony__img">
@@ -100,7 +100,7 @@
 
                             <b>Café descafeinado:</b> Es café al que se le ha eliminado la mayor parte de la cafeína. Se
                             puede encontrar en varias formas, como granos enteros, molido o instantáneo.</p>
-                        <a href="#" class="cta btn1">Ver Catálogo</a>
+                        <a href="tienda.php" class="cta btn1">Ver Tienda</a>
                     </div>
                     <figure class="testimony__picture">
                         <img src="./img/capuccino1.jpg" alt="" class="testimony__img">
@@ -125,7 +125,7 @@
                             condensada, leche evaporada y crema de leche. </p>
 
                         </p>
-                        <a href="#" class="cta btn1">Ver Catálogo</a>
+                        <a href="tienda.php" class="cta btn1">Ver Tienda</a>
                     </div>
                     <figure class="testimony__picture">
                         <img src="./img/postres1.jpg" alt="" class="testimony__img">
@@ -150,7 +150,7 @@
                             aguardiente de uvas, jugo de limón, jarabe de goma, clara de huevo y unas gotas de amargo de
                             angostura. </p>
                         </p>
-                        <a href="#" class="cta btn1">Ver Catálogo</a>
+                        <a href="tienda.php" class="cta btn1">Ver Tienda</a>
                     </div>
                     <figure class="testimony__picture">
                         <img src="./img/coctel1.jpg" alt="" class="testimony__img">
