@@ -77,7 +77,6 @@ if (count($productos) <= 0) {
                 Terminar compra
                 <a href="terminar_compra.php"></a>
             </button>
-
         </div>
     </div>
 <?php } ?>
