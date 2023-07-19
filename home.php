@@ -52,28 +52,32 @@
             </div>
         </nav>
         <section class="hero__container container">
-            <h1 class="hero__title">Aprende CSS desde CERO hasta dominarlo.</h1>
-            <p class="pero__paragraph">Elige aprender CSS de una vez por todas, una vez que termines este curso serás
-                capaz de crear cualquier layout con CSS y crear tus propias animaciones.</p>
-            <a href="#" class="cta">Comienza ahora</a>
+            <h1 class="hero__title">La mejor cafetería de la Ciudad</h1>
+            <p class="pero__paragraph">Adéntrate a ésta gran aventura donde podrás saborear nuestros deliciosos potajes
+                <br>
+                , atención de primera y una excelente banda sonora</p>
+            <a href="contacto.php" class="cta">Reserva</a>
         </section>
     </header>
 
     <main>
-       
         <section class="testimony">
             <div class="testimony__container container">
                 <img src="./img/leftarrow.svg" class="testimony__arrow" id="before" alt="">
                 <section class="testimony__body testimony__body--show" data-id="1">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Jordan Apexander, <span class="testimony__course">
-                                estudiante de CSS.</span></h2>
-                        <p class="testimony__review">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur itaque libero modi aliquam officia quia ipsam adipisci officiis assumenda
-                            molestiae ullam ducimus ea dolores veniam, voluptate eligendi commodi in obcaecati quasi
-                            placeat eaque nisi! Odit aliquid fugit aut libero fuga.</p>
-                            
-                            <a href="#" class="cta btn1">Ver Catálogo</a>
+                        <h2 class="subtitle">Hamburguesas,<br> <span class="testimony__course">
+                                Nuestros tipos:</span></h2>
+                        <p class="testimony__review"> <b>Hamburguesa clásica:</b> Como se describió anteriormente, es la
+                            versión básica con carne, lechuga, tomate, queso, cebolla y salsas.<br>
+
+                            <b>Hamburguesa con queso:</b> Similar a la hamburguesa clásica, pero con un enfoque especial
+                            en el queso, que se derrite sobre la carne.<br>
+
+                            <b>Hamburguesa de pollo:</b> En lugar de carne de res, se utiliza carne de pollo, que puede
+                            ser empanizada o a la parrilla.</p>
+
+                        <a href="#" class="cta btn1">Ver Catálogo</a>
                     </div>
                     <figure class="testimony__picture">
                         <img src="./img/burguer2.jpg" alt="" class="testimony__img">
@@ -81,12 +85,22 @@
                 </section>
                 <section class="testimony__body" data-id="2">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Alejandra Perez, <span class="testimony__course">
-                                estudiante de CSS.</span></h2>
-                        <p class="testimony__review">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur itaque libero modi aliquam officia quia ipsam adipisci officiis assumenda
-                            molestiae ullam ducimus ea dolores veniam.</p>
-                            <a href="#" class="cta btn1">Ver Catálogo</a>
+                        <h2 class="subtitle">Caffé,<br> <span class="testimony__course">
+                                Nuestros tipos:</span></h2>
+                        <p class="testimony__review">
+                            <b> Café negro:</b> Es el café regular sin ningún agregado o mezcla. Puede ser preparado en
+                            diferentes métodos, como la cafetera de goteo, la prensa francesa o la cafetera italiana
+                            (moka).<br>
+
+                            <b>Café Espresso:</b> El espresso se utiliza como base para muchas otras bebidas de café,
+                            como el cappuccino y el latte.<br>
+
+                            <b> Café con leche:</b> Es una combinación de café y leche caliente. La proporción varía
+                            según las preferencias individuales, pero generalmente se sirve en partes iguales.<br>
+
+                            <b>Café descafeinado:</b> Es café al que se le ha eliminado la mayor parte de la cafeína. Se
+                            puede encontrar en varias formas, como granos enteros, molido o instantáneo.</p>
+                        <a href="#" class="cta btn1">Ver Catálogo</a>
                     </div>
                     <figure class="testimony__picture">
                         <img src="./img/capuccino1.jpg" alt="" class="testimony__img">
@@ -94,12 +108,24 @@
                 </section>
                 <section class="testimony__body" data-id="3">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Roberto Carlos, <span class="testimony__course">
-                                estudiante de CSS.</span></h2>
-                        <p class="testimony__review">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur itaque libero modi aliquam officia quia ipsam adipisci officiis assumenda
-                            molestiae ullam ducimus ea dolores.</p>
-                            <a href="#" class="cta btn1">Ver Catálogo</a>
+                        <h2 class="subtitle">Postres,<br> <span class="testimony__course">
+                                Nuestros tipos:</span></h2>
+                        <p class="testimony__review">
+                            <b> Torta de chocolate: </b>Un clásico favorito que se elabora con capas de bizcocho de
+                            chocolate y relleno de crema de chocolate o ganache.<br>
+
+                            <b>Torta Red Velvet: </b> Un bizcocho suave y húmedo de color rojo intenso, con un ligero
+                            sabor a cacao y una textura aterciopelada.<br>
+
+                            <b> Torta de queso: </b> Un postre delicioso y cremoso hecho con queso crema. Puede ser un
+                            cheesecake clásico con base de galleta o una torta de queso japonesa con una textura más
+                            esponjosa.<br>
+
+                            <b>Torta de tres leches: </b> Una torta empapada en una mezcla de tres tipos de leche: leche
+                            condensada, leche evaporada y crema de leche. </p>
+
+                        </p>
+                        <a href="#" class="cta btn1">Ver Catálogo</a>
                     </div>
                     <figure class="testimony__picture">
                         <img src="./img/postres1.jpg" alt="" class="testimony__img">
@@ -107,12 +133,24 @@
                 </section>
                 <section class="testimony__body" data-id="4">
                     <div class="testimony__texts">
-                        <h2 class="subtitle">Mi nombre es Cristian Rivero, <span class="testimony__course">
-                                estudiante de CSS.</span></h2>
-                        <p class="testimony__review">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Aspernatur itaque libero modi aliquam officia quia ipsam adipisci officiis assumenda
-                            molestiae ullam ducimus ea dolores.</p>
-                            <a href="#" class="cta btn1">Ver Catálogo</a>
+                        <h2 class="subtitle">Cocteles,<br> <span class="testimony__course">
+                                Nuestros tipos:</span></h2>
+                        <p class="testimony__review">
+                            <b> Mojito:</b>Originario de Cuba, el Mojito es un cóctel refrescante y delicioso. Está
+                            hecho con ron blanco, azúcar, jugo de lima, hojas de menta fresca y soda. Es perfecto para
+                            los días calurosos de verano.<br>
+
+                            <b>Margarita: </b> Un clásico mexicano, la Margarita es un cóctel a base de tequila, jugo de
+                            lima y triple sec. <br>
+
+                            <b>Piña Colada: </b> Este cóctel tropical evoca imágenes de playas paradisíacas. La Piña
+                            Colada combina ron blanco, jugo de piña y crema de coco. <br>
+
+                            <b>Pisco Sour: </b> El Pisco Sour es el cóctel insignia de Perú. Se prepara con Pisco, un
+                            aguardiente de uvas, jugo de limón, jarabe de goma, clara de huevo y unas gotas de amargo de
+                            angostura. </p>
+                        </p>
+                        <a href="#" class="cta btn1">Ver Catálogo</a>
                     </div>
                     <figure class="testimony__picture">
                         <img src="./img/coctel1.jpg" alt="" class="testimony__img">
@@ -121,34 +159,35 @@
                 <img src="./img/rightarrow.svg" class="testimony__arrow" id="next" alt="">
             </div>
         </section>
-     
+
         <section class="knowledge">
             <div class="knowledge__container container">
                 <figure class="knowledge__picture">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MBY1k9MwVIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MBY1k9MwVIc"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </figure>
                 <div class="knowledge__texts">
-                    <h2 class="subtitle">Curso completo de CSS3. ¡Domina CSS de una vez por todas!</h2>
-                    <p class="knowledge__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-                        incidunt recusandae illum nobis praesentium ut est sapiente unde? Non, porro?</p>
-                    <a href="#" class="cta">Ingresa al Curso</a>
+                    <h2 class="subtitle">Aprende a preparar un CAPPUCCINO</h2>
+                    <p class="knowledge__paragraph"><b>Dato Curioso:</b> El cappuccino es una bebida comúnmente disfrutada en el
+                        desayuno o por la mañana en Italia. Tradicionalmente, se cree que no se debe tomar después de las 11
+                        a.m., ya que la leche se considera pesada para el estómago. Sin embargo, en muchas otras partes del
+                        mundo, el cappuccino se consume en cualquier momento del día.</p>
+                        
                 </div>
-              
-                
+
+
             </div>
         </section>
 
-      
+
         <section class="questions container2">
-            
-        <section class="questions__offer">
-            <h2 class="subtitle">¿Estas listo para aprender CSS?</h2>
-            <p class="questions__copy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, perspiciatis
-                similique pariatur ut tempore obcaecati beatae sapiente vel ipsam consequatur nisi est esse nemo nam
-                sit? Deserunt, nemo mollitia doloribus ea ipsam quam harum, fugit atque asperiores exercitationem
-                deleniti. Impedit dolorem numquam esse?</p>
-                <a href="#" class="cta">Aprende ahora</a>
-        </section>
+
+            <section class="questions__offer">
+                <h2 class="subtitle">¿Estas listo para vivir la experiencia de Jitsi Coffe?</h2>
+                <a href="tienda.php" class="cta">Ir a Tienda</a>
+            </section>
         </section>
     </main>
 
