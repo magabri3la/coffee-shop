@@ -23,18 +23,28 @@
             </div>
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
-                    <a href="index.html" class="nav__links">Inicio</a>
+                    <a href="home.php" class="nav__links">Inicio</a>
                 </li>
                 <li class="nav__items">
-                    <a href="nosotros.html" class="nav__links">Acerca de</a>
+                    <a href="nosotros.php" class="nav__links">Acerca de</a>
                 </li>
                 <li class="nav__items">
-                    <a href="contacto.html" class="nav__links">Contacto</a>
+                    <a href="contacto.php" class="nav__links">Contacto</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Blog</a>
+                    <a href="tienda.php" class="nav__links">Tienda</a>
                 </li>
-
+                <li class="nav__items">
+                    <a href="ver_carrito.php" class="nav__links">
+                        Ver carrito <?php
+                                        include_once "funciones.php";
+                                        $conteo = count(obtenerIdsDeProductosEnCarrito());
+                                        if ($conteo > 0) {
+                                            printf("(%d)", $conteo);
+                                        }
+                                        ?>&nbsp;<i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
                 <img src="./img/close.svg" alt="" class="nav__close">
             </ul>
             <div class="nav__menu">
