@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./styles/stylesnosotros.css">
     <!--AMIMATE CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 
@@ -49,7 +52,7 @@
                 <img src="./img/menu.svg" alt="">
             </div>
         </nav>
-        <section class="hero__container container">
+        <section class="hero__container container wow animate__animated animate__backInRight">
             <h1 class="hero__title">¿Quienes somos?</h1>
             <p class="pero__paragraph">En nuestra sección de preguntas frecuentes podrás encontrar mayor información
                 sobre nosotros.</p>
@@ -58,7 +61,7 @@
     </header>
 
     <main>
-        <section class="container about">
+        <section class="container about wow animate__animated animate__backInUp">
             <div class="about__main">
                 <article class="about__icons">
                     <img src="./img/shapes.svg" class="about__icon">
@@ -133,7 +136,7 @@
             </section>
     </main>
 
-    <section class="trivia">
+    <section class="trivia wow animate__animated animate__heartBeat">
         <div class="container">
             <h1 class="trivia-title">La Trivia Ganadora</h1>
             <div class="trivia-content">

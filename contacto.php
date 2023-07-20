@@ -22,13 +22,13 @@
         </div>
         <ul class="nav__link nav__link--menu">
             <li class="nav__items">
-                <a href="home.html" class="nav__links">Inicio</a>
+                <a href="home.php" class="nav__links">Inicio</a>
             </li>
             <li class="nav__items">
-                <a href="nosotros.html" class="nav__links">Acerca de</a>
+                <a href="nosotros.php" class="nav__links">Acerca de</a>
             </li>
             <li class="nav__items">
-                <a href="contacto.html" class="nav__links">Contacto</a>
+                <a href="contacto.php" class="nav__links">Contacto</a>
             </li>
             <li class="nav__items">
                 <a href="#" class="nav__links">Blog</a>

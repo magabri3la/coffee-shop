@@ -8,16 +8,15 @@
     <title>Jitsi Coffee</title>
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/styleshome.css">
-    <!--AMIMATE CSS-->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+
+    <!-- Link de Animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <header class="hero">
-        <nav class="nav container"> 
+        <nav class="nav container">
             <div class="nav__logo">
                 <h2 class="nav__title">Jisti Coffee</h2>
             </div>
@@ -36,13 +35,14 @@
                 </li>
                 <li class="nav__items">
                     <a href="ver_carrito.php" class="nav__links">
-                        Ver carrito <?php
-                                        include_once "funciones.php";
-                                        $conteo = count(obtenerIdsDeProductosEnCarrito());
-                                        if ($conteo > 0) {
-                                            printf("(%d)", $conteo);
-                                        }
-                                        ?>&nbsp;<i class="fa fa-shopping-cart"></i>
+                        Ver carrito
+                        <?php
+                        include_once "funciones.php";
+                        $conteo = count(obtenerIdsDeProductosEnCarrito());
+                        if ($conteo > 0) {
+                            printf("(%d)", $conteo);
+                        }
+                        ?>&nbsp;<i class="fa fa-shopping-cart"></i>
                     </a>
                 </li>
                 <img src="./img/close.svg" alt="" class="nav__close">
@@ -51,11 +51,12 @@
                 <img src="./img/menu.svg" alt="">
             </div>
         </nav>
-        <section class="hero__container container">
+        <section class="hero__container container wow animate__animated animate__backInLeft">
             <h1 class="hero__title">La mejor cafetería de la Ciudad</h1>
             <p class="pero__paragraph">Adéntrate a ésta gran aventura donde podrás saborear nuestros deliciosos potajes,
                 <br>
-                atención de primera y una excelente banda sonora</p>
+                atención de primera y una excelente banda sonora
+            </p>
             <a href="contacto.php" class="cta">Reserva</a>
         </section>
     </header>
@@ -75,7 +76,8 @@
                             en el queso, que se derrite sobre la carne.<br>
 
                             <b>Hamburguesa de pollo:</b> En lugar de carne de res, se utiliza carne de pollo, que puede
-                            ser empanizada o a la parrilla.</p>
+                            ser empanizada o a la parrilla.
+                        </p>
 
                         <a href="tienda.php" class="cta btn1">Ver Tienda</a>
                     </div>
@@ -99,7 +101,8 @@
                             según las preferencias individuales, pero generalmente se sirve en partes iguales.<br>
 
                             <b>Café descafeinado:</b> Es café al que se le ha eliminado la mayor parte de la cafeína. Se
-                            puede encontrar en varias formas, como granos enteros, molido o instantáneo.</p>
+                            puede encontrar en varias formas, como granos enteros, molido o instantáneo.
+                        </p>
                         <a href="tienda.php" class="cta btn1">Ver Tienda</a>
                     </div>
                     <figure class="testimony__picture">
@@ -122,7 +125,8 @@
                             esponjosa.<br>
 
                             <b>Torta de tres leches: </b> Una torta empapada en una mezcla de tres tipos de leche: leche
-                            condensada, leche evaporada y crema de leche. </p>
+                            condensada, leche evaporada y crema de leche.
+                        </p>
 
                         </p>
                         <a href="tienda.php" class="cta btn1">Ver Tienda</a>
@@ -148,9 +152,10 @@
 
                             <b>Pisco Sour: </b> El Pisco Sour es el cóctel insignia de Perú. Se prepara con Pisco, un
                             aguardiente de uvas, jugo de limón, jarabe de goma, clara de huevo y unas gotas de amargo de
-                            angostura. </p>
+                            angostura.
                         </p>
-                        <a href="tienda.php" class="cta btn1">Ver Tienda</a>
+                        </p>
+                        <a href="tienda.php" class="cta btn1 ">Ver Tienda</a>
                     </div>
                     <figure class="testimony__picture">
                         <img src="./img/coctel1.jpg" alt="" class="testimony__img">
@@ -160,7 +165,7 @@
             </div>
         </section>
 
-        <section class="knowledge">
+        <section class="knowledge wow animate__animated animate__backInRight">
             <div class="knowledge__container container">
                 <figure class="knowledge__picture">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/MBY1k9MwVIc"
@@ -168,13 +173,16 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </figure>
-                <div class="knowledge__texts">
+                <div class="knowledge__texts ">
                     <h2 class="subtitle">Aprende a preparar un CAPPUCCINO</h2>
-                    <p class="knowledge__paragraph"><b>Dato Curioso:</b> El cappuccino es una bebida comúnmente disfrutada en el
-                        desayuno o por la mañana en Italia. Tradicionalmente, se cree que no se debe tomar después de las 11
-                        a.m., ya que la leche se considera pesada para el estómago. Sin embargo, en muchas otras partes del
+                    <p class="knowledge__paragraph"><b>Dato Curioso:</b> El cappuccino es una bebida comúnmente
+                        disfrutada en el
+                        desayuno o por la mañana en Italia. Tradicionalmente, se cree que no se debe tomar después de
+                        las 11
+                        a.m., ya que la leche se considera pesada para el estómago. Sin embargo, en muchas otras partes
+                        del
                         mundo, el cappuccino se consume en cualquier momento del día.</p>
-                        
+
                 </div>
 
 
@@ -182,7 +190,7 @@
         </section>
 
 
-        <section class="questions container2">
+        <section class="questions container2 wow animate__animated animate__backInUp">
 
             <section class="questions__offer">
                 <h2 class="subtitle">¿Estas listo para vivir la experiencia de Jitsi Coffe?</h2>
@@ -190,7 +198,7 @@
             </section>
         </section>
     </main>
-    
+
     <footer class="footer">
         <section class="footer__container container">
             <nav class="nav nav--footer">
