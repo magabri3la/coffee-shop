@@ -13,9 +13,12 @@ if (count($productos) > 0) {
             <h1 class="titulo-TerminarCompra">
                 Gracias por tu compra
             </h1>
-            <button class="button">
-                <i class="fa fa-cart-plus"></i><a href="tienda.php" class="aLink">/a>
-            </button>
+
+
+            <a href="tienda.php" class="aLink button">
+                <i class="fa fa-cart-plus"></i> Ver tienda
+            </a>
+
         </section>
 
         <?php
