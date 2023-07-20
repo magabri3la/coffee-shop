@@ -29,7 +29,7 @@ const questions = [
 function startTrivia() {
   document.getElementById("start-button").style.display = "none";
   document.getElementById("question-container").style.display = "block";
-  document.getElementById("next-button").style.display = "block";
+  document.getElementById("next-button").style.display = "none";
   document.getElementById("timer").style.display = "block";
   showQuestion();
 }
@@ -55,6 +55,7 @@ function showQuestion() {
 
   question.options.forEach((option, index) => {
     const li = document.createElement("li");
+    li.classList.add("radio-input");
     li.textContent = option;
     li.addEventListener("click", () => checkAnswer(index));
     optionsElement.appendChild(li);
@@ -64,7 +65,7 @@ function showQuestion() {
 }
 
 function startTimer() {
-  let timeLeft = 10;
+  let timeLeft = 10000;
   timerElement.textContent = `Tiempo restante: ${timeLeft}`;
 
   timer = setInterval(() => {
@@ -130,4 +131,4 @@ function nextQuestion() {
   }
 }
 
-//showQuestion();
+showQuestion();
