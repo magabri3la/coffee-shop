@@ -65,7 +65,7 @@ function showQuestion() {
 }
 
 function startTimer() {
-  let timeLeft = 10000;
+  let timeLeft = 10;
   timerElement.textContent = `Tiempo restante: ${timeLeft}`;
 
   timer = setInterval(() => {
