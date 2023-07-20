@@ -48,9 +48,7 @@ iframe {
   display: block;
 }
 
-* {
-  /* font-weight: bold */
-}
+
 
 .contenedor {
   margin-left: auto;
@@ -119,7 +117,6 @@ CABECERA
 .rowProducts {
   display: flex;
   /* Flexbox*/
-  flex-direction: row;
   flex-wrap: wrap;
   /* Los elementos hijos se ponen en fila*/
   justify-content: center;
@@ -217,6 +214,7 @@ CABECERA
   flex-basis: 20%;
   /* Ocupa el 20% del ancho de la fila */
   max-width: 20%;
+  min-width: 250px;
   /* Establece un máximo del 20% del ancho de la fila */
   background: rgba(255, 255, 255, 0.10);
   box-shadow: 0 5px 10px rgba(0, 0, 0, .11);
@@ -314,6 +312,13 @@ svg {
   background-color: #998B84;
   padding: 8px 12px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.aLink{
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
 }
 
 
@@ -488,4 +493,20 @@ svg {
 
 .nav{
   margin-top: 16px !important;
+}
+
+
+/* terminar compra */
+
+.titulo-TerminarCompra {
+  color: white;
+  font-size: 50px;
+}
+
+.centrar-contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 350px;
 }
