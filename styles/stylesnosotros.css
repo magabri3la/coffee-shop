@@ -640,3 +640,79 @@ span{
     
     }
 }
+
+.trivia {
+    text-align: center;
+    background-color: #d4a300;
+    opacity: 1;
+}
+
+.trivia-title {
+    margin-bottom: 24px;
+}
+
+.trivia-content {
+    position: relative;
+}
+
+.trivia-questions {
+    padding: 64px 0 32px 0;
+    border: 3px solid chocolate;
+    border-radius: 16px;
+}
+
+#question {
+    font-weight: 600;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+#options {
+    line-height: 25px;
+    cursor: pointer;
+    display: flex;
+    gap: 16px;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 0;
+    max-width: 80%;
+    margin: 32px auto;
+}
+
+
+.option{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0px 87px 78px -39px rgba(0, 0, 0, 0.4);
+    width: 320px;
+    font-size: small;
+    border: solid;
+    font-weight: 600;
+}
+
+#timer{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: chocolate;
+    padding: 16px;
+    border-top-right-radius: 16px;
+    color: white;
+    font-weight: 700;
+    font-size: small;
+}
+
+#congratulations-message span {
+    background-color: chocolate;
+    padding: 16px;
+}
+
+.brown {
+    background-color: chocolate;
+    color: white;
+}
