@@ -207,7 +207,7 @@ CABECERA
 
 #title-carta {
   color: var(--color-blanco);
-  margin: 40px 0;
+  margin: 0 0 40px 0;
   font-family: var(--fuente-principal);
   text-align: center;
   font-size: 56px;
@@ -321,7 +321,7 @@ svg {
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   text-align: center;
   /* Alineación del texto en el centro */
