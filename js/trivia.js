@@ -55,7 +55,7 @@ function showQuestion() {
 
   question.options.forEach((option, index) => {
     const li = document.createElement("li");
-    li.classList.add("radio-input");
+    li.classList.add("option");
     li.textContent = option;
     li.addEventListener("click", () => checkAnswer(index));
     optionsElement.appendChild(li);

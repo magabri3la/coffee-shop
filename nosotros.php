@@ -76,8 +76,6 @@
             </div>
         </section>
 
-
-
         <section class="questions container" id="pfrecuentes">
             <h2 class="subtitle">Preguntas frecuentes</h2>
 
@@ -123,8 +121,35 @@
                     </div>
                 </article>
             </section>
-
     </main>
+
+    <section class="trivia">
+        <div class="container">
+            <h1 class="trivia-title">La Trivia Ganadora</h1>
+            <div class="trivia-content">
+                <button class="cta brown" id="start-button" onclick="startTrivia()">
+                    <span class="hover-underline-animation">Comenzar a jugar</span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg" id="arrow-horizontal">
+                    <path transform="translate(30)" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                        data-name="Path 10" id="Path_10"></path>
+                    </svg>
+                </button>
+    
+                <div class="trivia-questions" id="question-container" style="display: none;">
+                    <p id="question"></p>
+                    <ul id="options" class="label">
+                        <!-- Las opciones de respuesta se cargarán aquí dinámicamente -->
+                    </ul>
+                </div>
+    
+                <button id="next-button" onclick="nextQuestion()" style="display: none;"></button>
+                <p id="timer" style="display: none;">Tiempo restante: 10</p>
+    
+                <h1 id="congratulations-message" style="display: none;">Felicitaciones, tu código de descuento es: <span>Jitsi50%</span></h1>
+                <h1 id="retry-message" style="display: none;">Vuelve a intentarlo mañana para ganar el código de descuento.</h1>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <section class="footer__container container">
@@ -160,6 +185,8 @@
     <script src="./js/slider.js"></script>
     <script src="./js/questions.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/trivia.js"></script>
+
 </body>
 
 </html>
