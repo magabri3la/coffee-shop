@@ -130,5 +130,3 @@ function nextQuestion() {
     showQuestion();
   }
 }
-
-//showQuestion();
