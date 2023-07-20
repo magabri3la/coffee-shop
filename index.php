@@ -1,2 +1,2 @@
 <?php
-header("Location: tienda.php");
+header("Location: home.php");

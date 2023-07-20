@@ -6,45 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/stylesCart.css">
-    <!-- <link href="styles/stylesBoos.css" rel="stylesheet" /> -->
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="styles/styleshome.css">
+    
+    <title>Jitsi Coffee</title>
+    <!--FONTAWESOME CODE-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+    <!--ANIMATE CSS-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Coffee-Shop</title>
 </head>
 
 <body>
 
     <header class="header" class="espaciado">
-        <div class="contenedor">
-            <nav class="nav">
-                <a href="index.html" class="logo">
+        <nav class="nav container"> 
+            <div class="nav__logo">
+                <h2 class="nav__title">Jisti Coffe</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="home.php" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="nosotros.php" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="contacto.php" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <a href="tienda.php" class="nav__links">Tienda</a>
+                </li>
+                <li class="nav__items">
+                    <a href="ver_carrito.php" class="nav__links">
+                        Ver carrito <?php
+                                        include_once "funciones.php";
+                                        $conteo = count(obtenerIdsDeProductosEnCarrito());
+                                        if ($conteo > 0) {
+                                            printf("(%d)", $conteo);
+                                        }
+                                        ?>&nbsp;<i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
 
-                </a>
-                <div class="bars_menu" aria-label="Abrir menú">
-                    <span class="line1_bars-menu"></span>
-                    <span class="line2_bars-menu"></span>
-                    <span class="line3_bars-menu"></span>
-                </div>
-                <ul class="nav-menu">
-                    <li class="nav-menu-item">
-                        <a href="index.php" class="nav-menu-link nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="tienda.php" class="nav-menu-link nav-link">Tienda</a>
-                    </li>
-
-                    <li class="nav-menu-item">
-                        <a href="ver_carrito.php" class="nav-menu-link nav-link">
-                            Ver carrito <?php
-                                            include_once "funciones.php";
-                                            $conteo = count(obtenerIdsDeProductosEnCarrito());
-                                            if ($conteo > 0) {
-                                                printf("(%d)", $conteo);
-                                            }
-                                            ?>&nbsp;<i class="fa fa-shopping-cart"></i>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                <img src="./img/close.svg" alt="" class="nav__close">
+            </ul>
+            <div class="nav__menu">
+                <img src="./img/menu.svg" alt="">
+            </div>
+        </nav>  
     </header>
